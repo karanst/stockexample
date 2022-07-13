@@ -60,14 +60,21 @@ class WatchlistCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                Text(
-                  percentage,
-                  style: const TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xff1BCB95),
-                  ),
+                Row(
+                  children:  [
+                    const Icon(Icons.arrow_upward_sharp, color: Color(0xff1BCB95),size: 13,),
+                    Text(
+                      percentage,
+                      style: const TextStyle(
+                        fontSize: 10,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff1BCB95),
+                      ),
+                    ),
+
+                  ],
                 ),
+
               ],
             ),
             Row(
@@ -115,7 +122,7 @@ final cardDetails = [
     "image": "assets/adobe.png",
     "title": "ADB",
     "subtitle": "Adobe Inc",
-    "percentage": "↑ 5.49%",
+    "percentage": " 5.49%",
     "price": "\$643.48",
     "text": "33.49"
   },
@@ -123,7 +130,7 @@ final cardDetails = [
     "image": "assets/tesla.png",
     "title": "TSLA",
     "subtitle": "Tesla",
-    "percentage": "↑ 2.49%",
+    "percentage": " 2.49%",
     "price": "\$350.48",
     "text": "20.49"
   },
@@ -131,7 +138,7 @@ final cardDetails = [
     "image": "assets/nvidia.png",
     "title": "NVDA",
     "subtitle": "Nvidia",
-    "percentage": "↑ 8.49%",
+    "percentage": " 8.49%",
     "price": "\$561.48",
     "text": "42.49"
   }

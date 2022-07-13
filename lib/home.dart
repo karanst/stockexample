@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  height: 250,
+                  height: 220,
                   child: Stack(
                     children: [
                       Padding(
@@ -88,17 +88,22 @@ class _HomeState extends State<Home> {
                               style: TextStyle(
                                   fontSize: 12, color: Color(0xffa0c0d9)),
                             ),
-                            const Padding(
-                              padding: EdgeInsets.only(
+                             Padding(
+                              padding: const EdgeInsets.only(
                                 left: 135.0,
                               ),
-                              child: Text(
-                                "2.11% ↑",
-                                style: TextStyle(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.bold,
-                                  color: Color(0xff1BCB95),
-                                ),
+                              child: Row(
+                                children: const [
+                                  Text(
+                                    "2.11% ",
+                                    style: TextStyle(
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xff1BCB95),
+                                    ),
+                                  ),
+                                  Icon(Icons.arrow_upward_sharp, color: Color(0xff1BCB95),size: 12,)
+                                ],
                               ),
                             ),
                             const Text(
@@ -330,8 +335,8 @@ class _HomeState extends State<Home> {
                             ],
                           ),
                           Column(
-                            children: const [
-                              Text(
+                            children:  [
+                             const Text(
                                 "25.94",
                                 style: TextStyle(
                                   fontSize: 12,
@@ -339,14 +344,20 @@ class _HomeState extends State<Home> {
                                   color: Color(0xff1BCB95),
                                 ),
                               ),
-                              Text(
-                                "↑ 0.49%",
-                                style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold,
-                                  color: Color(0xff1BCB95),
-                                ),
+                              Row(
+                                children: const [
+                                  Text(
+                                    "2.11% ",
+                                    style: TextStyle(
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xff1BCB95),
+                                    ),
+                                  ),
+                                  Icon(Icons.arrow_upward_sharp, color: Color(0xff1BCB95),size: 13,)
+                                ],
                               ),
+
                             ],
                           ),
                           Column(
